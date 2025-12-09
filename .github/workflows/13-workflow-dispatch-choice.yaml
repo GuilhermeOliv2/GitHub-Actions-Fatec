@@ -6,7 +6,7 @@ on:
       tag:
         description: "Escolha uma tag"
         required: true
-        default: "tag1"
+        default: tag1
         type: choice
         options:
           - tag1
@@ -18,4 +18,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mostrar a escolha
-        run: echo "Você escolheu a opção: ${{ github.event.inputs.tag }}"
+        run: echo "Você escolheu a opção:${{ github.event.inputs.tag }}"
