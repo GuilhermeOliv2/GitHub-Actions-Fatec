@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mostrar valor boolean
-        run: echo "Valor escolhido: ${{ github.event.inputs.ativo }}"
+        run: echo "Valor escolhido:${{ github.event.inputs.ativo }}"
