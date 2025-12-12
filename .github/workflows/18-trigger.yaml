@@ -1,0 +1,11 @@
+name: GitHub Actions - Trigger Template
+
+on:
+  push:
+
+jobs:
+  trigger-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensagem do Trigger
+        run: "echo Trigger finalizado"
